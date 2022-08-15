@@ -75,7 +75,7 @@
                                         </connections>
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종료 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5f-1u-hzj" userLabel="종료 :">
-                                        <rect key="frame" x="20" y="201.5" width="50" height="30"/>
+                                        <rect key="frame" x="20" y="201.5" width="49.5" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="DRn-TU-DOE"/>
                                         </constraints>
@@ -84,7 +84,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="i8R-oc-E4f">
-                                        <rect key="frame" x="70" y="201.5" width="225" height="30"/>
+                                        <rect key="frame" x="69.5" y="201.5" width="225" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="225" id="dFe-SN-PuJ"/>
                                             <constraint firstAttribute="height" constant="30" id="wJG-oz-cuG"/>
@@ -99,6 +99,42 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="o4S-yr-Dhl">
+                                        <rect key="frame" x="20" y="313.5" width="374" height="70"/>
+                                        <subviews>
+                                            <stackView contentMode="scaleToFill" distribution="fillProportionally" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="lgW-s9-gi0">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시작 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ul2-we-kxI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="34.5" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="Xdi-Q7-U7f">
+                                                        <rect key="frame" x="135" y="0.0" width="239" height="30"/>
+                                                    </datePicker>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="fZf-xD-Z8h"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nss-8f-PRE">
+                                                <rect key="frame" x="0.0" y="40" width="374" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시작 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOx-MQ-3GS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="43" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="0OI-Zx-Tg2">
+                                                        <rect key="frame" x="43" y="0.0" width="331" height="30"/>
+                                                    </datePicker>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kaz-R3-hDt">
                                         <rect key="frame" x="277" y="30" width="48.5" height="59"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
@@ -129,11 +165,14 @@
                                     <constraint firstItem="Ngs-If-9Lg" firstAttribute="leading" secondItem="9yb-Yf-2cu" secondAttribute="trailing" id="PuW-4x-LBG"/>
                                     <constraint firstItem="i8R-oc-E4f" firstAttribute="leading" secondItem="P5f-1u-hzj" secondAttribute="trailing" id="QQ6-Wl-LfY"/>
                                     <constraint firstItem="P5f-1u-hzj" firstAttribute="leading" secondItem="9yb-Yf-2cu" secondAttribute="leading" id="Ted-gj-ucU"/>
+                                    <constraint firstItem="o4S-yr-Dhl" firstAttribute="leading" secondItem="ZG8-u6-LU3" secondAttribute="leading" constant="20" id="bGU-WT-piC"/>
                                     <constraint firstItem="P5f-1u-hzj" firstAttribute="top" secondItem="9yb-Yf-2cu" secondAttribute="bottom" constant="10" id="bTE-wG-JX7"/>
                                     <constraint firstItem="g4m-p0-Qcj" firstAttribute="top" secondItem="P5f-1u-hzj" secondAttribute="bottom" constant="30" id="bsM-0w-RKq"/>
                                     <constraint firstItem="OZ2-F9-1mw" firstAttribute="top" secondItem="vmm-7Z-syy" secondAttribute="top" id="fAi-Bu-8v7"/>
                                     <constraint firstItem="Lkt-Nl-qrQ" firstAttribute="leading" secondItem="ZG8-u6-LU3" secondAttribute="leading" constant="20" id="gDs-Nq-H2O"/>
+                                    <constraint firstAttribute="trailing" secondItem="o4S-yr-Dhl" secondAttribute="trailing" constant="20" id="kMV-XK-GNe"/>
                                     <constraint firstItem="g4m-p0-Qcj" firstAttribute="leading" secondItem="P5f-1u-hzj" secondAttribute="leading" id="r5X-AW-FgO"/>
+                                    <constraint firstItem="o4S-yr-Dhl" firstAttribute="top" secondItem="g4m-p0-Qcj" secondAttribute="bottom" constant="30" id="uGQ-Hd-88Q"/>
                                     <constraint firstItem="g4m-p0-Qcj" firstAttribute="trailing" secondItem="vaI-Ar-Wf6" secondAttribute="trailing" id="w15-Z0-dxw"/>
                                     <constraint firstItem="vmm-7Z-syy" firstAttribute="top" secondItem="Lkt-Nl-qrQ" secondAttribute="top" id="y9v-Jc-DNY"/>
                                     <constraint firstItem="Lkt-Nl-qrQ" firstAttribute="top" secondItem="ZG8-u6-LU3" secondAttribute="top" constant="30" id="z4Y-Iq-JI6"/>
